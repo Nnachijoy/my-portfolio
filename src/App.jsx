@@ -5,6 +5,8 @@ import Hero from "./Component/Hero";
 import About from "./Component/About";
 import Projects from "./Component/Projects";
 import Contact from "./Component/Contact";
+import Reference from "./Component/Reference";
+import Footer from "./Component/Footer";
 
 function App() {
  
@@ -16,6 +18,8 @@ function App() {
      <About />
      <Projects />
      <Contact />
+     <Reference />
+     <Footer />
      </div>
     </>
   )

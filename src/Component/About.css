@@ -1,0 +1,11 @@
+.slide-in {
+    opacity: 0;
+    transform: translateX(100px);
+    transition: opacity 2s ease, transform 2s ease;
+  }
+  
+  .slide-in.active {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  

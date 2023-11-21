@@ -5,6 +5,7 @@ import { faPlusCircle } from '@fortawesome/free-solid-svg-icons';
 import firstproject from '../assets/firstproject.png';
 import secondproject from '../assets/secondproject.png';
 import thirdproject from '../assets/thirdproject.png';
+import './projects.css'; 
 
 const Projects = () => {
   return (
@@ -16,7 +17,7 @@ const Projects = () => {
 
       <Row className="p-5">
         <Col md={4} className="mb-5">
-          <Card>
+          <Card style={{ borderRadius: '20px' }} className="zoom-effect">
             <img src={firstproject} alt="" className="img-fluid w-100" />
             <Card.Body>
               <Card.Title>
@@ -52,8 +53,8 @@ const Projects = () => {
         </Col>
 
         <Col md={4} className="mb-5">
-          <Card>
-            <img src={secondproject} alt="" className="img-fluid w-100" />
+          <Card style={{ borderRadius: '20px' }}  className="zoom-effect">
+            <img src={secondproject} alt="" className="img-fluid w-100 " />
             <Card.Body>
               <Card.Title>
               <div className="d-flex">
@@ -62,8 +63,7 @@ const Projects = () => {
                 <p>
                 This simple landing page marks my first project into the realm of React JS.
                  Leveraging the power of bootstrap, I engineered a highly responsive interface 
-                 that not only adapts seamlessly to various devices but also captivates with its aesthetic
-                  allure. 
+                 that adapts seamlessly to various devices.
               </p>
               <div className='d-flex'>
               <p className='fw-bolder'>
@@ -89,7 +89,7 @@ const Projects = () => {
         </Col>
 
         <Col md={4} className="mb-5">
-          <Card>
+          <Card style={{ borderRadius: '20px' }} className="zoom-effect">
             <img src={thirdproject} alt="" className="img-fluid w-100" />
             <Card.Body>
               <Card.Title>
@@ -97,9 +97,9 @@ const Projects = () => {
                 <div>
                 <h4 className='fw-bolder'>HTML, CSS, JAVASCRIPT</h4>
                 <p>
-                Delve into my inaugural HTML,CSS and JAVASCRIPT Project. Uncover the fusion of creativity
+                 Uncover the creativity
                  that defines this project,
-                  showcasing smooth user experience and captivating UI.
+                  showcasing smooth user experience and captivating UI using HTML and Javascript.
               </p>
               <div className='d-flex'>
               <p className='fw-bolder'>

@@ -1,10 +1,35 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import avatar from "../assets/avatar.png";
 import ProgressBar from 'react-bootstrap/ProgressBar';
+import './About.css'; 
 
 const About = () => {
   const now = 90;
+
+  const [isVisible, setIsVisible] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const element = document.getElementById('myElement'); // Replace 'myElement' with the actual ID of your container element
+      const rect = element.getBoundingClientRect();
+      const windowHeight = window.innerHeight || document.documentElement.clientHeight;
+
+      if (rect.top <= windowHeight * 0.75 && rect.bottom >= 0) {
+        setIsVisible(true);
+      } else {
+        setIsVisible(false);
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
+
+  
 
   return (
     <section className='bg-black hero'>
@@ -13,14 +38,14 @@ const About = () => {
 
                 <Col md={7} className='mt-5 mb-5'>
                  <Row>
-                    <Col sm={6} md={5}>
+                 <Col sm={6} md={5} className={`slide-in ${isVisible ? 'active' : ''}`} id="myElement">
                       <div >
                         <img src={avatar} alt="" className="img-fluid w-100 border p-5" />   
                       </div>
                     </Col>
 
-                    <Col sm={6} md={7}>
-                      <div className="mt-4">
+                    <Col sm={6} md={7} className={`slide-in ${isVisible ? 'active' : ''}`} id="myElement">
+                      <div className="mt-2">
                         <p><span>Name: </span> <span>Nnachi Joy</span></p>
                         <p><span>Profile: </span> <span>Frontend Developer</span></p>
                         <p><span>Email: </span> <span><a href="gmail.com"  className="git text-white">
@@ -159,3 +184,14 @@ const About = () => {
 }
 
 export default About
+
+
+
+
+
+
+
+
+
+
+
