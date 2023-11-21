@@ -195,7 +195,7 @@ export default function App() {
             </MDBCol>
 
             <MDBCol md="4" lg="2" xl="2" className='mx-auto mb-4'>
-              <h6 className='text-uppercase fw-bold mb-4'>Adress</h6>
+              <h6 className='text-uppercase fw-bold mb-4'>Address</h6>
               <p>
                Rivers State
               </p>

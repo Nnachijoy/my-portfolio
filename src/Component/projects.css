@@ -8,3 +8,14 @@
     transform: scale(1.1);
   }
   
+  .card-container {
+    opacity: 0;
+    transform: translateY(100px);
+    transition: opacity 1s ease, transform 1s ease;
+  }
+  
+  .card-container.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  

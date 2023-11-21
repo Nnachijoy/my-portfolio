@@ -1,5 +1,5 @@
-import React from 'react';
-import { Container, Row, Col, Button, Card } from 'react-bootstrap';
+import React, { useEffect, useState } from 'react';
+import { Row, Col, Card } from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPlusCircle } from '@fortawesome/free-solid-svg-icons';
 import firstproject from '../assets/firstproject.png';
@@ -8,6 +8,30 @@ import thirdproject from '../assets/thirdproject.png';
 import './projects.css'; 
 
 const Projects = () => {
+  const [isVisible, setIsVisible] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const elements = document.querySelectorAll('.card-container');
+      const windowHeight = window.innerHeight || document.documentElement.clientHeight;
+
+      elements.forEach((element) => {
+        const rect = element.getBoundingClientRect();
+
+        if (rect.top <= windowHeight * 0.75 && rect.bottom >= 0) {
+          element.classList.add('visible');
+        } else {
+          element.classList.remove('visible');
+        }
+      });
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
   return (
     <section className='hero'>
       <div className="text-center">
@@ -16,7 +40,7 @@ const Projects = () => {
       </div>
 
       <Row className="p-5">
-        <Col md={4} className="mb-5">
+      <Col md={4} className={`mb-5 card-container ${isVisible ? 'visible' : ''}`}>
           <Card style={{ borderRadius: '20px' }} className="zoom-effect">
             <img src={firstproject} alt="" className="img-fluid w-100" />
             <Card.Body>
@@ -52,7 +76,7 @@ const Projects = () => {
           </Card>
         </Col>
 
-        <Col md={4} className="mb-5">
+        <Col md={4} className={`mb-5 card-container ${isVisible ? 'visible' : ''}`}>
           <Card style={{ borderRadius: '20px' }}  className="zoom-effect">
             <img src={secondproject} alt="" className="img-fluid w-100 " />
             <Card.Body>
@@ -88,7 +112,7 @@ const Projects = () => {
           </Card>
         </Col>
 
-        <Col md={4} className="mb-5">
+        <Col md={4} className={`mb-5 card-container ${isVisible ? 'visible' : ''}`}>
           <Card style={{ borderRadius: '20px' }} className="zoom-effect">
             <img src={thirdproject} alt="" className="img-fluid w-100" />
             <Card.Body>

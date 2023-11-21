@@ -1,18 +1,8 @@
 
-    /* .rounded-icon {
-      display: inline-block;
-      padding: 5px;
-      border-radius: 50%;
-      background-color: rgba(128, 128, 128, 0.418);
-      color: black;
-      border: 1px solid lightgoldenrodyellow
-    } */
-
     .rounded-icon {
       display: inline-block;
       padding: 6px;
       border-radius: 50%;
-      /* background-color: rgba(128, 128, 128, 0.418); */
       background-color: white;
       color: black;
       border: 2px solid yellow;
@@ -27,6 +17,21 @@
         transform: rotate(15deg);
       }
     }
+
+
+    
+    .hire-me-section {
+      opacity: 0;
+      transform: translateX(100px);
+      transition: opacity 1s ease, transform 1s ease;
+    }
+    
+    .hire-me-section.slide-in {
+      opacity: 1;
+      transform: translateX(0);
+    }
+    
+
  
   
   
