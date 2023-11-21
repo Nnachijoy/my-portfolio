@@ -14,7 +14,7 @@ const Hero = () => {
   }, []);
 
   return (
-    <div className='mt-3 p-3 hero'>
+    <div className='mt-3  hero'>
       <Container>
         <Row>
           <Col md={6} xm={12} className='mt-5 mb-3'>

@@ -33,7 +33,7 @@ const About = () => {
 
   return (
     <section className='bg-black hero'>
-        <Container className='bg-black p-5'>
+        <Container className='bg-black'>
             <Row>
 
                 <Col md={7} className='mt-5 mb-5'>

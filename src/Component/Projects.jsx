@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { Row, Col, Card } from 'react-bootstrap';
+import { Row, Col, Card, Container } from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPlusCircle } from '@fortawesome/free-solid-svg-icons';
 import firstproject from '../assets/firstproject.png';
@@ -33,13 +33,14 @@ const Projects = () => {
   }, []);
 
   return (
+    <Container>
     <section className='hero'>
       <div className="text-center">
         <h1 className="fw-bolder display-3">PROJECTS</h1>
         <p>Let's explore some of the projects I have built!</p>
       </div>
 
-      <Row className="p-5">
+      <Row className="mt-5">
       <Col md={4} className={`mb-5 card-container ${isVisible ? 'visible' : ''}`}>
           <Card style={{ borderRadius: '20px' }} className="zoom-effect">
             <img src={firstproject} alt="" className="img-fluid w-100" />
@@ -149,6 +150,7 @@ const Projects = () => {
         </Col>
       </Row>
     </section>
+    </Container>
   );
 };
 

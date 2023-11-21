@@ -7,7 +7,7 @@ import './References.css';
 
 const Reference = () => {
   return (
-    <div>
+    <section>
 
         <Container className='reference-container p-3 text-black mt-5'>
 
@@ -52,10 +52,8 @@ const Reference = () => {
         </Row>
         </Container>
 
-           
+      </section>     
 
-
-              </div>
   )
 }
 

@@ -27,8 +27,10 @@ const Contact = () => {
   }, []);
 
   return (
-    <div className='hero'>
-        <Row className='p-5'>
+    <div className='contact'>
+      <section>
+      <Container>
+        <Row className='mt-5'>
         <Col xs={12} md={6} className='mb-5 mt-3 hire-me-section'>
       <h2 className='fw-bolder display-4'>Hire Me</h2>
       <p className='lead'>
@@ -58,6 +60,8 @@ const Contact = () => {
             <img src={contactt} alt="" className="img-fluid w-100" />
             </Col>
         </Row>
+        </Container>
+        </section>
     </div>
   )
 }
