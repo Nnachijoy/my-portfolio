@@ -20,9 +20,9 @@ const Hero = () => {
           <Col md={6} xm={12} className='mt-5 mb-3'>
             <CSSTransition in={inProp} timeout={3000} classNames="slide-in">
               <div>
-                <h2 className='fw-bolder display-4'>
+                <h1 className='fw-bolder display-4'>
                   <span className="animated-bg">Frontend Developer</span> {" "}who writes clean & efficient code.
-                </h2>
+                </h1>
                 <p>Picture me as a dedicated architect, driven by an unwavering
                   commitment to excellence. Nnachi is poised with a fusion of creativity and
                   precision to turn ordinary concepts into extraordinary digital
