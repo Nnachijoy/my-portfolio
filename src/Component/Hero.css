@@ -1,0 +1,13 @@
+/* Hero.css */
+
+.slide-in-enter {
+    opacity: 0;
+    transform: translateX(70px);
+  }
+  
+  .slide-in-enter-active {
+    opacity: 1;
+    transform: translateX(0);
+    transition: opacity 3s, transform 3s; /* Adjusted the transition duration to 800ms */
+  }
+  
