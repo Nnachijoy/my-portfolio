@@ -4,7 +4,7 @@ import blackworkspace from "../assets/blackworkspace.jpg";
 
 const Hero = () => {
   return (
-    <div className='mt-5 p-3'>
+    <div className='mt-5 p-3 hero'>
         <Container>
             <Row>
                 <Col md={6} xm={12} className='mt-5 mb-3'>

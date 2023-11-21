@@ -8,7 +8,7 @@ import thirdproject from '../assets/thirdproject.png';
 
 const Projects = () => {
   return (
-    <section>
+    <section className='hero'>
       <div className="text-center">
         <h1 className="fw-bolder display-3">PROJECTS</h1>
         <p>Let's explore some of the projects I have built!</p>

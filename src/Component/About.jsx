@@ -7,7 +7,7 @@ const About = () => {
   const now = 90;
 
   return (
-    <section className='bg-black'>
+    <section className='bg-black hero'>
         <Container className='bg-black p-5'>
             <Row>
 

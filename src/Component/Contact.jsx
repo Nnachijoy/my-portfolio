@@ -2,9 +2,10 @@ import React from 'react'
 import { Container, Row, Col, Button, Card } from 'react-bootstrap';
 import contactmee from '../assets/contactmee.jpg';
 
+
 const Contact = () => {
   return (
-    <div>
+    <div className='hero'>
         <Row className='p-5'>
             <Col xs={12} md={6} className='mb-5 mt-5'>
             <h2 className='fw-bolder display-4'>Hire Me</h2>
@@ -16,23 +17,23 @@ expertise in a dynamic role as a frontend developer. Specializing in crafting
   team player.</p>
 
   <div className='mt-2'>
-  <a href='mailto:your-email@gmail.com' target='_blank' rel='noopener noreferrer'>
+  <a href='mailto:Nnachijoychima2000@gmail.com' target='_blank' rel='noopener noreferrer'>
         <button className='btn btn-primary me-2'>
-          <i className='bi bi-envelope'></i> Email Me
+          Email Me
         </button>
       </a>
 
-      {/* GitHub button */}
-      <a href='https://github.com/your-github-username' target='_blank' rel='noopener noreferrer'>
+     
+      <a href='https://github.com/Nnachijoy' target='_blank' rel='noopener noreferrer'>
         <button className='btn btn-dark me-2'>
-          <i className='bi bi-github'></i> GitHub
+           GitHub
         </button>
       </a>
 
-      {/* WhatsApp button */}
-      <a href='https://wa.me/1234567890' target='_blank' rel='noopener noreferrer'>
+      
+      <a href='https://wa.me/07043560704' target='_blank' rel='noopener noreferrer'>
         <button className='btn btn-success'>
-          <i className='bi bi-whatsapp'></i> WhatsApp
+          WhatsApp
         </button>
       </a>
 

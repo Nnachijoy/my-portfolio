@@ -60,7 +60,7 @@ function MyNavbar() {
   }, []);
 
   return (
-    <Navbar className={`sticky-top ${scrolling ? 'bg-white' : ''}`} expand="lg">
+    <Navbar className={`sticky-top ${scrolling ? 'bg-white' : ''} hero`} expand="lg">
       <Container>
         <Navbar.Brand href="#home" className={`fw-bolder navbarBrand ${scrolling ? 'text-dark' : 'text-white'}`}>
           NNACHI
